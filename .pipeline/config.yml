@@ -3,7 +3,7 @@ steps:
     buildTarget: 'NEO'
     mtaJarLocation: '~/workspace/PSDevOpsDemo_master/mta.jar'
   neoDeploy:
-    neoHome: './opt/sap/neo-sdk/'
+    neoHome: '~/workspace/PSDevOpsDemo_master/neo-sdk/'
     neo:
       credentialsId: 'NEO_DEPLOY'
       account: 'k1og0f63bw'

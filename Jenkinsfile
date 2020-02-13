@@ -1,5 +1,5 @@
 
-node()
+pipeline()
 {     
     environment {
         PATH="/opt/sap/neo-sdk/tools:$PATH"      

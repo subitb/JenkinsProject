@@ -10,6 +10,7 @@ pipeline()
    {
    steps
    {
+     withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin'])
    echo "PATH=$PATH"  
 }   
   

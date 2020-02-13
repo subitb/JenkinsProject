@@ -1,3 +1,19 @@
-@Library('piper-lib-os') _
 
-fioriOnCloudPlatformPipeline script:this
+pipeline()
+{     
+    environment {
+      
+   }
+   agent none
+   stages{
+   stage('initial')
+   {
+   steps
+   {
+    
+   echo "PATH=$PATH"  
+}   
+  
+   }
+   }
+}

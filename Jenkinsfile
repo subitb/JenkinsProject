@@ -1,19 +1,3 @@
-@Library('piper-library-os') _
-pipeline()
-{     
-    environment {
-        PATH="/opt/sap/neo-sdk/tools:/usr/sbin:/usr/bin:/sbin:/bin"      
-   }
-   agent none
-   stages{
-   stage('initial')
-   {
-   steps
-   {
-    
-   echo "PATH=$PATH"  
-}   
-  
-   }
-   }
-}
+@Library('piper-lib-os') _
+
+fioriOnCloudPlatformPipeline script:this

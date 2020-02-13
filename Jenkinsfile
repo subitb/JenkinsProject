@@ -1,4 +1,4 @@
-@Library('piper-lib-os') _
+
 node()
 {     
     environment {
@@ -7,6 +7,7 @@ node()
    stage('initial')
    {
    echo "PATH=$PATH"   
+   @Library('piper-lib-os') _
    fioriOnCloudPlatformPipeline script:this
    }
 }

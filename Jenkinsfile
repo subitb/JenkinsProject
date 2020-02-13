@@ -1,5 +1,5 @@
-
-node()
+@Library('piper-library-os') _
+pipeline()
 {     
     environment {
         PATH="/opt/sap/neo-sdk/tools:/usr/sbin:/usr/bin:/sbin:/bin"      

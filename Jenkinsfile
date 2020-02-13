@@ -8,7 +8,10 @@ pipeline()
    stages{
    stage('initial')
    {
-   echo "PATH=$PATH"   
+   steps
+   {
+   echo "PATH=$PATH"  
+}   
    @Library('piper-lib-os') _
    fioriOnCloudPlatformPipeline script:this
    }

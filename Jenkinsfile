@@ -2,7 +2,7 @@
 pipeline()
 {     
     environment {
-        PATH="/opt/sap/neo-sdk/tools:$PATH"      
+        PATH="/opt/sap/neo-sdk/tools:/usr/sbin:/usr/bin:/sbin:/bin"      
    }
    agent none
    stages{
@@ -10,7 +10,7 @@ pipeline()
    {
    steps
    {
-     withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin'])
+    
    echo "PATH=$PATH"  
 }   
   

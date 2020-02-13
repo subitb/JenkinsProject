@@ -1,9 +1,6 @@
 pipeline()
 {     
-    environment {
-      
-   }
-   agent none
+    agent none
    stages{
    stage('initial')
    {

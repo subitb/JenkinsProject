@@ -8,7 +8,7 @@ pipeline()
    steps
    {
    withEnv(['PATH+EXTRA=/opt/sap/neo-sdk/tools'])
-   echo "PATH=$PATH"  
+   sh 'echo "PATH=$PATH"'  
 }   
   
    }

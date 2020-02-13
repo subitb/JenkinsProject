@@ -1,4 +1,16 @@
-echo "PATH=$PATH"
-@Library('piper-lib-os') _
 
-fioriOnCloudPlatformPipeline script:this
+pipeline()
+{     
+   agent none
+   stages{
+   stage('initial')
+   {
+   steps
+   {
+   withEnv(['PATH+EXTRA=/opt/sap/neo-sdk/tools'])
+   sh 'printenv' 
+}   
+  
+   }
+   }
+}
